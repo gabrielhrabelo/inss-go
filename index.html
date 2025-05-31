@@ -15,26 +15,27 @@
     <title>Pedidos e INSS</title>
   </head>
   <body>
-    <div class="top-bar">
+    <div class="top-bar mobile-only">
       <span>
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-              <path
-                fill="#ffffff"
-                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-              />
-            </svg>
-            (62) 9 8477-3535
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path
+            fill="#ffffff"
+            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+          />
+        </svg>
+        (62) 9 8477-3535
       </span>
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-              <path
-                fill="#ffffff"
-                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-              />
-            </svg>
-            mcsconsultorias@hotmail.com
+          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path
+            fill="#ffffff"
+            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+          />
+        </svg>
+        mcsconsultorias@hotmail.com
+      </span>
     </div>
     <div class="hamburger" id="hamburger">
       <span></span>
@@ -47,9 +48,17 @@
       <a href="#localizacao">Localização</a>
       <a href="#contact">Contato</a>
     </nav>
-    <h1 class="title-inss">
-      <span>I</span><span>N</span><span>S</span><span>S</span>
-    </h1>
+    <nav class="">
+      <h1 class="title-inss">
+        <span>I</span><span>N</span><span>S</span><span>S</span>
+      </h1>
+      <ul class="menu-desktop desktop-only">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
     <div class="prev-sub-title">
       <p>
         Tudo o que você precisa saber <br />
@@ -63,24 +72,26 @@
     </div>
 
     <section id="about">
-      <h2 class="about-title">Quem somos?</h2>
-      <div class="about-container">
-        <p>
-          Temos o intuito de oferecer serviços de seguros de modo transparente e
-          ágil. Com mais de 17 anos de experiência, nossa equipe é composta por
-          profissionais qualificados e comprometidos com a excelência no
-          atendimento. Nosso objetivo é simplificar o processo de solicitação de
-          benefícios do INSS, garantindo que nossos clientes recebam o suporte
-          necessário em momentos críticos, como aposentadorias, pensões e
-          auxílios.
-        </p>
-      </div>
-      <div class="about-container">
-        <p>
-          Estamos aqui para ajudar você a entender melhor seus direitos e
-          benefícios junto ao INSS, garantindo que você receba todo o suporte
-          necessário em momentos importantes da sua vida.
-        </p>
+      <div class="about">
+        <h2 class="about-title">Quem somos?</h2>
+        <div class="about-container">
+          <p>
+            Temos o intuito de oferecer serviços de seguros de modo transparente
+            e ágil. Com mais de 17 anos de experiência, nossa equipe é composta
+            por profissionais qualificados e comprometidos com a excelência no
+            atendimento. Nosso objetivo é simplificar o processo de solicitação
+            de benefícios do INSS, garantindo que nossos clientes recebam o
+            suporte necessário em momentos críticos, como aposentadorias,
+            pensões e auxílios.
+          </p>
+        </div>
+        <div class="about-container">
+          <p>
+            Estamos aqui para ajudar você a entender melhor seus direitos e
+            benefícios junto ao INSS, garantindo que você receba todo o suporte
+            necessário em momentos importantes da sua vida.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -88,7 +99,7 @@
       <div class="subtitle-contract">
         <h3>Por que contratar?</h3>
       </div>
-      <img src="assets/blue bike nobg.png" alt="">
+      <img src="assets/blue bike nobg.png" alt="" />
       <div class="container contract-container">
         <h2>Razões para nos escolher</h2>
         <p class="p1">
@@ -123,7 +134,7 @@
         <div class="line"></div>
 
         <div class="service-item">
-          <img src="assets/lawyer signing.png" alt="">
+          <img src="assets/lawyer signing.png" alt="" />
           <h2><span>➜</span>Monitoramento de processos</h2>
           <p>Atualizações constantes sobre sua solicitação</p>
         </div>
@@ -131,7 +142,7 @@
         <div class="line"></div>
 
         <div class="service-item">
-          <img src="assets/lawyers-business.png" alt="">
+          <img src="assets/lawyers-business.png" alt="" />
           <h2><span>➜</span>Suporte em documentação</h2>
           <p>Auxílio na coleta de documentos necessários</p>
         </div>
@@ -139,7 +150,7 @@
         <div class="line"></div>
 
         <div class="service-item">
-          <img src="assets/lawyer writing.png" alt="">
+          <img src="assets/lawyer writing.png" alt="" />
           <h2><span>➜</span>Consultoria sobre indenizações</h2>
           <p>Orientação completa sobre seu direito</p>
         </div>
@@ -297,3 +308,4 @@
     </script>
   </body>
 </html>
+
