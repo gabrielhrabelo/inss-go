@@ -142,6 +142,7 @@ body {
 }
 
 .about-title {
+  margin-bottom: 2rem;
   opacity: 0;
   animation: slideRight 0.5s 500ms ease forwards;
   font-family: Poppins, sans-serif;
@@ -171,6 +172,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
+  margin-bottom: 1rem;
   gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -651,6 +653,11 @@ footer {
   color: rgba(0, 0, 0, 0.48);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes slideUp {
   0% {
     transform: translateY(100%);
@@ -681,5 +688,701 @@ footer {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .title-inss {
+    font-size: 5rem;
+    text-align: left;
+    margin-left: 5rem;
+  }
+
+  ul,
+  li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    list-style: none;
+  }
+
+  ul.menu-desktop {
+    width: fit-content;
+    border-radius: 1rem;
+    top: 4.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1100;
+    backdrop-filter: blur(15px);
+    padding: 0.7rem 2.5rem;
+    backdrop-filter: none;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 500ms ease;
+  }
+
+  li {
+    transition: all 500ms ease;
+  }
+
+  li:hover {
+    transform: scale(1.2);
+  }
+
+  nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .prev-sub-title {
+    font-size: 2rem;
+  }
+
+  .buttons-header {
+    & button {
+      font-size: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 25rem;
+      padding: 1rem 1rem;
+      height: auto;
+      border-radius: 1rem;
+    }
+  }
+
+  #about {
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    & .about {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 1rem;
+    }
+
+    & .about-title {
+      margin-bottom: 3rem;
+      font-size: 3rem;
+    }
+
+    & .about-container {
+      width: 80%;
+      max-width: 800px;
+      padding: 2rem;
+      height: auto;
+      margin-bottom: 5rem;
+
+      & .about-container:last-child {
+        margin-bottom: 8rem;
+      }
+
+      & p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  #reasons-contract {
+    & .subtitle-contract {
+      margin-top: 8rem;
+      font-size: 3rem;
+      border-width: 0.8rem;
+    }
+
+    & img[src*="blue"] {
+      width: 30%;
+      height: auto;
+      margin-bottom: 3rem;
+    }
+
+    & .contract-container {
+      width: 80%;
+
+      & h2 {
+        margin-top: 4rem;
+        font-size: 2.5rem;
+      }
+
+      & p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+      }
+
+      & .p3 {
+        margin-top: 0.5rem;
+      }
+
+      & .p5 {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  #services {
+    margin-top: 5rem;
+
+    & h3 {
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+
+    & .subtitle-services {
+      width: 70%;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3rem;
+    }
+
+    & .container {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & img {
+      display: flex;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & .service-item {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+      & h2 {
+        margin-top: 5rem;
+        font-size: 2.5rem;
+        margin-left: 7rem;
+      }
+
+      & p {
+        margin-left: 11rem;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+      }
+    }
+    & .line {
+      border-radius: 2rem;
+    }
+  }
+
+  #beneficios {
+    margin-top: 5rem;
+
+    & .container {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & h3 {
+      margin-top: 4rem;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    & .benefit-item {
+      margin-top: 3rem;
+      & h2 {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+      }
+
+      & p {
+        margin-left: 3rem;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    & .line {
+      margin-block: 4rem;
+    }
+  }
+
+  #localizacao {
+    & .subtitle-loc {
+      border-width: 0.5rem;
+    }
+
+    & iframe {
+      display: flex;
+      width: 80%;
+      height: 25rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem;
+    }
+
+    & h3 {
+      font-size: 2.5rem;
+    }
+
+    & .container {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & .adress-container {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  #contact {
+    & button {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 20rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    & img {
+      width: 35px;
+    }
+
+    & span {
+      font-size: 1.5rem;
+    }
+  }
+
+  footer {
+    font-size: 1.2rem;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  .whatsapp-float {
+    transition: all 300ms ease;
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: 100px;
+
+    & img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  & .whatsapp-float:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+    scale: 1.1;
+    background: #15c830f8;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .title-inss {
+    font-size: 5rem;
+    text-align: left;
+    margin-left: 15rem;
+  }
+
+  ul,
+  li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    list-style: none;
+  }
+
+  ul.menu-desktop {
+    width: fit-content;
+    border-radius: 1rem;
+    top: 4.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1100;
+    backdrop-filter: blur(15px);
+    padding: 0.7rem 2.5rem;
+    backdrop-filter: none;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 500ms ease;
+  }
+
+  li {
+    transition: all 500ms ease;
+  }
+
+  li:hover {
+    transform: scale(1.2);
+  }
+
+  nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .prev-sub-title {
+    font-size: 2rem;
+  }
+
+  .buttons-header {
+    & button {
+      font-size: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 25rem;
+      padding: 1rem 1rem;
+      height: auto;
+      border-radius: 1rem;
+    }
+  }
+
+  #about {
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    & .about {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 60%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 1rem;
+    }
+
+    & .about-title {
+      margin-bottom: 3rem;
+      font-size: 3rem;
+    }
+
+    & .about-container {
+      width: 100%;
+      max-width: 800px;
+      padding: 2rem;
+      height: auto;
+      margin-bottom: 5rem;
+
+      & .about-container:last-child {
+        margin-bottom: 8rem;
+      }
+
+      & p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  #reasons-contract {
+    & .subtitle-contract {
+      margin-top: 8rem;
+      font-size: 3rem;
+      border-width: 0.8rem;
+    }
+
+    & img[src*="blue"] {
+      width: 30%;
+      height: auto;
+      margin-bottom: 3rem;
+    }
+
+    & .contract-container {
+      width: 55%;
+
+      & h2 {
+        margin-top: 4rem;
+        font-size: 2.5rem;
+      }
+
+      & p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15rem;
+        max-width: 50%;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+      }
+
+      & .p3 {
+        margin-top: 0.5rem;
+      }
+
+      & .p5 {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  #services {
+    margin-top: 5rem;
+
+    & h3 {
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+
+    & .subtitle-services {
+      width: 70%;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3rem;
+    }
+
+    & .container {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & img {
+      display: flex;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & .service-item {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      & h2 {
+        margin-top: 5rem;
+        font-size: 2.5rem;
+        margin-left: 5rem;
+      }
+
+      & p {
+        margin-left: 8rem;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+      }
+    }
+    & .line {
+      border-radius: 2rem;
+    }
+  }
+
+  #beneficios {
+    margin-top: 5rem;
+
+    & .container {
+      width: 45%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & h3 {
+      margin-top: 4rem;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    & .benefit-item {
+      & h2 {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+      }
+
+      & p {
+        margin-left: 5rem;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    & .line {
+      margin-block: 4rem;
+    }
+  }
+
+  #localizacao {
+    & .subtitle-loc {
+      border-width: 0.5rem;
+    }
+
+    & iframe {
+      display: flex;
+      width: 80%;
+      height: 25rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem;
+    }
+
+    & h3 {
+      font-size: 2.5rem;
+    }
+
+    & .container {
+      width: 45%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & .adress-container {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  #contact {
+    & button {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 20rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    & img {
+      width: 35px;
+    }
+
+    & span {
+      font-size: 1.5rem;
+    }
+  }
+
+  footer {
+    font-size: 1.2rem;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  .whatsapp-float {
+    transition: all 300ms ease;
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: 100px;
+
+    & img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  & .whatsapp-float:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+    scale: 1.1;
+    background: #15c830f8;
   }
 }
